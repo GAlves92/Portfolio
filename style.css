@@ -10,6 +10,9 @@
 
 #body {
   padding-bottom: 80px;
+  cursor: pointer;
+  display: inline-block;
+  /* margin-left: 10%; */
 }
 
 #footer {
@@ -84,4 +87,29 @@
 .pic {
 cursor: pointer;
 border-radius: 100%;
+}
+
+#bubble {
+  padding-bottom: 80px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.axis { 
+  font: 7px sans-serif bolder; 
+  text-align: center;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: top;
+  overflow: auto;
+}
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
