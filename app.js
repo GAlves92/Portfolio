@@ -4,22 +4,18 @@ var Scores = [8.5, 6.5, 5, 7.5, 6.5, 7, 6.5, 7.5, 6, 6, 10, 8.5, 10, 10];
 var skills = ["Python", "Pandas", "Web Scrapping", "Excel", "Matplotlib", "GitHub", 
 "JS", "Tableau", "M. Learning", "D3.js", "Data Mining", "CSS", "Social_Analytics", "Customer Service"];
 
-var svgHeight = 600;
-var svgWidth = 960;
+var svgHeight = 400;
+var svgWidth = 500;
 
-var margin = {
-  top: 60,
-  right: 0,
-  bottom: 0,
-  left: 60
-};
+var margin = {top: 50, right: 10, bottom: 10, left: 40}
 
 var chartHeight = svgHeight - margin.top - margin.bottom;
 var chartWidth = svgWidth - margin.left - margin.right;
 
-var svg = d3.select("#body").append("svg")
-  .attr("height", svgHeight)
-  .attr("width", svgWidth)
+var svg = d3.select("#body")
+  .append("svg")
+  .attr("height", svgHeight + margin.left + margin.right)
+  .attr("width", svgWidth + margin.top + margin.bottom)
   .attr("viewBox", `0 0 ${svgHeight} ${svgWidth}`);
 
 var chartGroup = svg.append("g")
@@ -72,7 +68,7 @@ chartGroup.append("text")
   .text("Experience");
 
 chartGroup.append("text")
-  .attr("transform", "translate(" + (chartWidth) + " ," + (chartHeight + margin.top) + ")")
+  .attr("transform", "translate(" + (chartWidth / 2) + " ," + (chartHeight + margin.top) + ")")
   .attr("class", "axisText")
   .attr("font-size", "20px")
   .attr("fill", "darkred")
