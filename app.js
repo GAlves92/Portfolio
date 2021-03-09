@@ -8,10 +8,10 @@ var svgHeight = 600;
 var svgWidth = 960;
 
 var margin = {
-  top: 50,
-  right: 70,
-  bottom: 70,
-  left: 50
+  top: 60,
+  right: 0,
+  bottom: 0,
+  left: 60
 };
 
 var chartHeight = svgHeight - margin.top - margin.bottom;
@@ -19,10 +19,11 @@ var chartWidth = svgWidth - margin.left - margin.right;
 
 var svg = d3.select("#body").append("svg")
   .attr("height", svgHeight)
-  .attr("width", svgWidth);
+  .attr("width", svgWidth)
+  .attr("viewBox", `0 0 ${svgHeight} ${svgWidth}`);
 
 var chartGroup = svg.append("g")
-  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+.attr("transform", `translate(-${margin.left}-${margin.top})`);
 
 var yScale = d3.scaleLinear()
   .domain([0, d3.max(Scores)])
@@ -71,7 +72,7 @@ chartGroup.append("text")
   .text("Experience");
 
 chartGroup.append("text")
-  .attr("transform", "translate(" + (chartWidth / 2) + " ," + (chartHeight + margin.top) + ")")
+  .attr("transform", "translate(" + (chartWidth) + " ," + (chartHeight + margin.top) + ")")
   .attr("class", "axisText")
   .attr("font-size", "20px")
   .attr("fill", "darkred")
@@ -84,3 +85,4 @@ d3.select("#body")
   .attr("preserveAspectRatio", "xMinYMin meet")
   .attr("viewBox", "0 0 960 600")
   .classed("svg-content-responsive", true); 
+
