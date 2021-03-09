@@ -4,10 +4,10 @@ var Scores = [8.5, 6.5, 5, 7.5, 6.5, 7, 6.5, 7.5, 6, 6, 10, 8.5, 10, 10];
 var skills = ["Python", "Pandas", "Web Scrapping", "Excel", "Matplotlib", "GitHub", 
 "JS", "Tableau", "M. Learning", "D3.js", "Data Mining", "CSS", "Social_Analytics", "Customer Service"];
 
-var svgHeight = 320;
-var svgWidth = 400;
+var svgHeight = 360;
+var svgWidth = 450;
 
-var margin = {top: 50, right: 10, bottom: 10, left: 40}
+var margin = {top: 50, right: -15, bottom: -15, left: 40}
 
 var chartHeight = svgHeight - margin.top - margin.bottom;
 var chartWidth = svgWidth - margin.left - margin.right;
