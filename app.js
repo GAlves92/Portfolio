@@ -4,8 +4,8 @@ var Scores = [8.5, 6.5, 5, 7.5, 6.5, 7, 6.5, 7.5, 6, 6, 10, 8.5, 10, 10];
 var skills = ["Python", "Pandas", "Web Scrapping", "Excel", "Matplotlib", "GitHub", 
 "JS", "Tableau", "M. Learning", "D3.js", "Data Mining", "CSS", "Social_Analytics", "Customer Service"];
 
-var svgHeight = 400;
-var svgWidth = 500;
+var svgHeight = 350;
+var svgWidth = 400;
 
 var margin = {top: 50, right: 10, bottom: 10, left: 40}
 
