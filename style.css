@@ -110,6 +110,17 @@ border-radius: 100%;
 .svg-content-responsive {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: 20px;
+}
+
+/*MEDIA QUERY for desktop websites */
+@media only screen and (min-width : 799px) {
+}
+
+/*MEDIA QUERY for phones websites */
+@media only screen and (max-width : 400px) {
+}
+
+/*MEDIA QUERY for tablet websites */
+@media only screen and (max-width : 799px) and (min-width : 401px){
 }
