@@ -1,8 +1,8 @@
 // Bar Chart:
 
-var Scores = [8.5, 6.5, 5, 7.5, 6.5, 7, 6.5, 7.5, 6, 6, 10, 8.5, 10, 10];
-var skills = ["Python", "Pandas", "Web Scrapping", "Excel", "Matplotlib", "GitHub", 
-"JS", "Tableau", "M. Learning", "D3.js", "Data Mining", "CSS", "Social_Analytics", "Customer Service"];
+var Scores = [8.5, 7.5, 6.5, 8.5, 6.5, 7, 7.5, 6, 6, 6, 9, 8.5, 9, 9, 7];
+var skills = ["Python", "Pandas", "Active Directory", "Excel/CSV", "Matplotlib", "GitHub", 
+"Elements Connect", "Tableau", "M. Learning", "D3.js", "Data Mining", "HTML/CSS", "Social_Analytics", "Customer Service", "Oracle E-Business"];
 
 var svgHeight = 360;
 var svgWidth = 450;
