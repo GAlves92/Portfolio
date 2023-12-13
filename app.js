@@ -63,7 +63,7 @@ chartGroup.append("text")
   .attr("x", 0 - (chartHeight / 2))
   .attr("dy", "0.7em")
   .attr("class", "axisText")
-  .attr("font-size", "20px")
+  .attr("font-size", "10px")
   .attr("fill", "darkred")
   .text("Experience (Years)";
 
