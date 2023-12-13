@@ -65,7 +65,7 @@ chartGroup.append("text")
   .attr("class", "axisText")
   .attr("font-size", "10px")
   .attr("fill", "darkred")
-  .text("Experience (Years)";
+  .text("Years of Experience");
 
 chartGroup.append("text")
   .attr("transform", "translate(" + (chartWidth / 2) + " ," + (chartHeight + margin.top) + ")")
